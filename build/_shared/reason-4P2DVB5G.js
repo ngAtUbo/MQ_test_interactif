@@ -1,1 +1,1 @@
-import{a}from"/MQ_test_interactif/build/_shared/chunk-FIR6PRUR.js";import"/MQ_test_interactif/build/_shared/chunk-OZE3FFNP.js";export default a();
+import{a}from"/build/_shared/chunk-FIR6PRUR.js";import"/build/_shared/chunk-OZE3FFNP.js";export default a();
