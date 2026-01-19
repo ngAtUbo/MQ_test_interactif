@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:3019/sitemap_style.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3020/sitemap_style.xsl" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3019</loc>
+    <loc>http://localhost:3020</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/bibliocours</loc>
+    <loc>http://localhost:3020/bibliocours</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap1-introduction</loc>
+    <loc>http://localhost:3020/chap1-introduction</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap2-ondulatoire-classique</loc>
+    <loc>http://localhost:3020/chap2-ondulatoire-classique</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap3-lumiere</loc>
+    <loc>http://localhost:3020/chap3-lumiere</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap4-fondements</loc>
+    <loc>http://localhost:3020/chap4-fondements</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap5-mecanique-apetp</loc>
+    <loc>http://localhost:3020/chap5-mecanique-apetp</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap6-etats-quantiques</loc>
+    <loc>http://localhost:3020/chap6-etats-quantiques</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/chap7-evolution-temporelle</loc>
+    <loc>http://localhost:3020/chap7-evolution-temporelle</loc>
   </url>
   <url>
-    <loc>http://localhost:3019/index-general</loc>
+    <loc>http://localhost:3020/index-general</loc>
   </url>
 </urlset>
