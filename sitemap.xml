@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:3025/sitemap_style.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:3026/sitemap_style.xsl" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:3025</loc>
+    <loc>http://localhost:3026</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/apropos</loc>
+    <loc>http://localhost:3026/apropos</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/bibliocours</loc>
+    <loc>http://localhost:3026/bibliocours</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap1-introduction</loc>
+    <loc>http://localhost:3026/chap1-introduction</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap2-ondulatoire-classique</loc>
+    <loc>http://localhost:3026/chap2-ondulatoire-classique</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap3-lumiere</loc>
+    <loc>http://localhost:3026/chap3-lumiere</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap4-fondements</loc>
+    <loc>http://localhost:3026/chap4-fondements</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap5-mecanique-apetp</loc>
+    <loc>http://localhost:3026/chap5-mecanique-apetp</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap6-etats-quantiques</loc>
+    <loc>http://localhost:3026/chap6-etats-quantiques</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/chap7-evolution-temporelle</loc>
+    <loc>http://localhost:3026/chap7-evolution-temporelle</loc>
   </url>
   <url>
-    <loc>http://localhost:3025/index-general</loc>
+    <loc>http://localhost:3026/index-general</loc>
   </url>
 </urlset>
