@@ -29,7 +29,7 @@ Ce contenu pédagogique est adressé à des étudiant.e.s de deuxième année de
 ```
 
 
-Brest, le 4 février 2026
+Brest, le 6 février 2026
 
 Département de Physique
 

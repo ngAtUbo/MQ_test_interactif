@@ -481,7 +481,7 @@ xnulPos = 2 * math.pi / deltak
 
 plt.figure()
 
-plt.plot(x,y,label = 'paquet d'ondes')
+plt.plot(x,y,label = 'paquet d\'ondes')
 
 plt.axvline(xnulNeg,color='gray',linestyle='--',label =
 '-2pi/deltak') # tracer droite verticale
@@ -712,7 +712,7 @@ for t in t_values:
 
 plt.xlabel("x (nm)")
 plt.ylabel(r"|ψ(x,t)|²")
-plt.title("Évolution d’un paquet d’onde gaussien (électron 150 eV)")
+plt.title("Évolution d’un paquet d\’onde gaussien (électron 150 eV)")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
