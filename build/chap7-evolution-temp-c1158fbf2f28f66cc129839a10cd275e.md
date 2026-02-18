@@ -1,0 +1,611 @@
+Ã¯Â»Â¿---
+title: "OpÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution et ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger"
+description: "ÃƒÆ’Ã¢â‚¬Â°volution temporelle dans l'espace des ÃƒÆ’Ã‚Â©tats."
+authors:
+  - name: Gilles Nguyen Vien
+    affiliation: DÃƒÆ’Ã‚Â©partement de Physique, UniversitÃƒÆ’Ã‚Â© de Bretagne Occidentale
+license:
+  id: "CC-BY-NC-ND-4.0"
+
+date: 2026-01-19
+---
+
+#  OpÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution et ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger
+
+L'opÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution $\widehat{U}( t_{2},t_{1} )$ associe
+au ket
+$ | \Psi( t_{1} )ÃƒÂ¢Ã…Â¸Ã‚Â©$
+reprÃƒÆ’Ã‚Â©sentant l'ÃƒÆ’Ã‚Â©tat d'un systÃƒÆ’Ã‚Â¨me au temps $t_{1}$ un autre ket, notÃƒÆ’Ã‚Â©
+$ | \Psi( t_{2} )ÃƒÂ¢Ã…Â¸Ã‚Â©$,
+reprÃƒÆ’Ã‚Â©sentant l'ÃƒÆ’Ã‚Â©tat du mÃƒÆ’Ã‚Âªme systÃƒÆ’Ã‚Â¨me au temps $t_{2}$. On peut donc
+ÃƒÆ’Ã‚Â©crire :
+
+$$ | \Psi( t_{2} )  > = \widehat{U} ( t_{2},t_{1} )| \Psi( t_{1} )ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Dans l'espace dual s'ÃƒÆ’Ã‚Â©crit :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Psi( t_{2} ) |  = <  \Psi( t_{1} ) | {\widehat{U}}^{\dagger}( t_{2},t_{1} )$$
+
+Pour que la norme du vecteur d'ÃƒÆ’Ã‚Â©tat se conserve au cours du temps il
+faut que l'opÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution soit unitaire. En effet, on a :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Psi( t_{2} ) || \Psi( t_{2} ) > = <  \Psi( t_{1} ) | {\widehat{U}}^{\dagger}( t_{2},t_{1} )\widehat{U} ( t_{2},t_{1} )| \Psi( t_{1} )ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Si $\widehat{U}$ est unitaire on a bien :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Psi( t_{2} ) || \Psi( t_{2} ) > = < \Psi( t_{1} ) || \Psi( t_{1} )ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Il est ÃƒÆ’Ã‚Â©vident que $\widehat{U}(t,t)$ est l'opÃƒÆ’Ã‚Â©rateur identitÃƒÆ’Ã‚Â©. En
+consÃƒÆ’Ã‚Â©quence $\widehat{U}(t + dt,t)$ pour un $dt$ infinitÃƒÆ’Ã‚Â©simal est un
+opÃƒÆ’Ã‚Â©rateur peu diffÃƒÆ’Ã‚Â©rent de l'identitÃƒÆ’Ã‚Â© qu'on peut ÃƒÆ’Ã‚Â©crire sous la forme :
+
+$$\widehat{U}(t + dt,t) = \widehat{1} + \widehat{K}(t)dt$$
+
+L'unitaritÃƒÆ’Ã‚Â© de l'opÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution implique la condition :
+
+$$\widehat{1} = ( \widehat{1} + \widehat{K}dt )( \widehat{1} + {\widehat{K}}^{\dagger}dt ) = \widehat{1} + ( \widehat{K} + {\widehat{K}}^{\dagger} )dt + O(dt)$$
+
+Le terme de second ordre ÃƒÆ’Ã‚Â©tant nÃƒÆ’Ã‚Â©gligeable et $\widehat{U}$ ÃƒÆ’Ã‚Â©tant
+unitaire, cela conduit ÃƒÆ’Ã‚Â  :
+
+$$( \widehat{K} + {\widehat{K}}^{\dagger} ) = \widehat{0}$$
+
+L'opÃƒÆ’Ã‚Â©rateur $\widehat{K}$ est donc anti-hermitique et homogÃƒÆ’Ã‚Â¨ne ÃƒÆ’Ã‚Â 
+l'inverse d'un temps. Il est plus commode de faire intervenir un
+opÃƒÆ’Ã‚Â©rateur hermitique $\widehat{H}$ car il possÃƒÆ’Ã‚Â¨de des propriÃƒÆ’Ã‚Â©tÃƒÆ’Ã‚Â©s plus
+intÃƒÆ’Ã‚Â©ressantes.
+
+Posons : $\widehat{K} = \widehat{H}/(i\hslash)$
+
+L'adjoint est donnÃƒÆ’Ã‚Â© par :
+
+$${\widehat{K}}^{\dagger} = \frac{{\widehat{H}}^{\dagger}}{( - i\hslash)} = \frac{\widehat{H}}{( - i\hslash)} = - \widehat{K}$$
+
+L'opÃƒÆ’Ã‚Â©rateur $\widehat{H}$ est homogÃƒÆ’Ã‚Â¨ne ÃƒÆ’Ã‚Â  une ÃƒÆ’Ã‚Â©nergie. On l'appelle
+{index}`opÃƒÆ’Ã‚Â©rateur hamiltonien`.
+
+Nous allons maintenant obtenir l'ÃƒÆ’Ã‚Â©quation diffÃƒÆ’Ã‚Â©rentielle vÃƒÆ’Ã‚Â©rifiÃƒÆ’Ã‚Â©e par le
+vecteur d'ÃƒÆ’Ã‚Â©tat. L'application de l'opÃƒÆ’Ã‚Â©rateur d'ÃƒÆ’Ã‚Â©volution au vecteur
+d'ÃƒÆ’Ã‚Â©tat donne la relation :
+
+$$\widehat{U}(t + dt,t) | \Psi(t)  > =  | \Psi(t + dt)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+soit :
+
+$$( \widehat{1} + \frac{\widehat{H}}{i\hslash}dt ) | \Psi(t)  > =  | \Psi(t + dt)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+$$ \widehat{H}dt| \Psi(t)  > = i\hslash[  | \Psi(t + dt)  > -  | \Psi(t)  > ]$$
+
+et finalement l'ÃƒÆ’Ã‚Â©quation diffÃƒÆ’Ã‚Â©rentielle :
+
+$$ \widehat{H}| \Psi(t)  > = i\hslash\frac{d}{dt} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+C'est l'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger (dÃƒÆ’Ã‚Â©pendante du temps). Elle est ÃƒÆ’Ã‚Â©crite
+ici sous une forme abstraite mais trÃƒÆ’Ã‚Â¨s gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©rale.
+
+On postule donc :
+
+```{admonition} Postulat 6
+<u>L\'ÃƒÆ’Ã‚Â©volution temporelle de</uÃƒÂ¢Ã…Â¸Ã‚Â©$| \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$ dÃƒÆ’Ã‚Â©crivant l\'ÃƒÆ’Ã‚Â©tat du systÃƒÆ’Ã‚Â¨me au temps t
+ est rÃƒÆ’Ã‚Â©gie par :
+
+ $$ \widehat{H}| \Psi(t)  > = i\hslash\frac{d}{dt} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+ oÃƒÆ’Ã‚Â¹ $\widehat{H}(t)$ est l\'observable associÃƒÆ’Ã‚Â©e ÃƒÆ’Ã‚Â  l\'ÃƒÆ’Ã‚Â©nergie totale du
+ systÃƒÆ’Ã‚Â¨me.
+ ```
+
+## Equation de SchrÃƒÆ’Ã‚Â¶dinger dans une base donnÃƒÆ’Ã‚Â©e
+
+On choisit des ÃƒÆ’Ã‚Â©tats de base dont le choix arbitraire nous permet
+d\'apprÃƒÆ’Ã‚Â©hender le comportement du systÃƒÆ’Ã‚Â¨me.
+
+Supposons que l'ensemble des vecteurs ${  | u_{k}  > }$ forme
+une base orthonormÃƒÆ’Ã‚Â©e de l'espace des ÃƒÆ’Ã‚Â©tats. En projetant l'ÃƒÆ’Ã‚Â©quation de
+SchrÃƒÆ’Ã‚Â¶dinger sur un vecteur de base donnÃƒÆ’Ã‚Â© il vient :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨u_{k} | \widehat{H}| \Psi(t)  > = i\hslash\frac{d}{dt}< u_{k} || \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+En utilisant la relation de fermeture :
+
+$$\sum_{l = 1}^{N} <  u_{k} | \widehat{H}| u_{l}  >< u_{l} || \Psi(t) > = i\hslash\frac{d}{dt}< u_{k} || \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+soit :
+
+$$\sum_{l = 1}^{N}{\widehat{H}}_{kl}c_{l}(t) = i\hslash\frac{d}{dt}c_{k}(t)$$
+
+Les amplitudes d'ÃƒÆ’Ã‚Â©tat vÃƒÆ’Ã‚Â©rifient donc un systÃƒÆ’Ã‚Â¨me d'ÃƒÆ’Ã‚Â©quations
+diffÃƒÆ’Ã‚Â©rentielles couplÃƒÆ’Ã‚Â©es du premier ordre par rapport ÃƒÆ’Ã‚Â  $t$. La donnÃƒÆ’Ã‚Â©e
+des amplitudes ÃƒÆ’Ã‚Â  $t = 0$ permet donc de les dÃƒÆ’Ã‚Â©terminer ÃƒÆ’Ã‚Â  tout instant
+ultÃƒÆ’Ã‚Â©rieur. Ainsi lorsque l'ÃƒÆ’Ã‚Â©tat est connu ÃƒÆ’Ã‚Â  un instant donnÃƒÆ’Ã‚Â© l'ÃƒÆ’Ã‚Â©quation
+de SchrÃƒÆ’Ã‚Â¶dinger permet de le connaÃƒÆ’Ã‚Â®tre ÃƒÆ’Ã‚Â  tout instant ultÃƒÆ’Ã‚Â©rieur.
+
+## Etats stationnaires
+
+Soit ${  | \Phi_{k}  > }$
+une base orthonormÃƒÆ’Ã‚Â©e de kets propres du l'hamiltonien. Nous supposerons
+que toutes les valeurs propres de $\widehat{H}$ sont non dÃƒÆ’Ã‚Â©gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©rÃƒÆ’Ã‚Â©es. On
+a donc :
+
+$\widehat{H} | \Phi_{k}  > = E_{k} | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+$E_{k}$ et $ | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$ ne
+dÃƒÆ’Ã‚Â©pendent pas du temps.
+
+$\widehat{H}$ ÃƒÆ’Ã‚Â©tant une observable et ses valeurs propres ÃƒÆ’Ã‚Â©tant non
+dÃƒÆ’Ã‚Â©gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©rÃƒÆ’Ã‚Â©es, on dÃƒÆ’Ã‚Â©veloppe
+$ | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$ sur la base des
+vecteurs propres de $\widehat{H}$ :
+
+$$ | \Psi(t)  > = \sum_{k}^{}{c_{k}(t)} | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Toute la dÃƒÆ’Ã‚Â©pendance temporelle de
+$ | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$ est contenue dans les
+amplitudes d\'ÃƒÆ’Ã‚Â©tats $c_{k}(t)$. L\'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger donne :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Phi_{k} | \widehat{H}| \Psi(t)  > = i\hslash\frac{d}{dt}< \Phi_{k} || \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+$\widehat{H}$ ÃƒÆ’Ã‚Â©tant hermitique :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Phi_{k} | \widehat{H} = E_{k}<  \Phi_{k} | $$
+
+Ainsi on a :
+
+$$i\hslash\frac{d}{dt}c_{k}(t) = {E_{k}c}_{k}(t)$$
+
+Le Hamiltonien est bien diagonal dans la base de ses vecteurs propres
+(valeurs propres non dÃƒÆ’Ã‚Â©gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©rÃƒÆ’Ã‚Â©es).
+
+Dans le cas d'un systÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  deux ÃƒÆ’Ã‚Â©tats de base et en reprÃƒÆ’Ã‚Â©sentation
+matricielle dans la base des ÃƒÆ’Ã‚Â©tats solutions de $\widehat{H}$ (ÃƒÆ’Ã‚Â©tats
+stationnaires) :
+
+$\begin{pmatrix}
+E_{1} & 0 \\
+0 & E_{2}
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = i\hslash\frac{d}{dt}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix}$ avec
+$E_{i} =  <  \Phi_{i} | \widehat{H}| \Phi_{i}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+
+Le Hamiltonien joue cependant un rÃƒÆ’Ã‚Â´le privilÃƒÆ’Ã‚Â©giÃƒÆ’Ã‚Â© car c'est le gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©rateur
+de l'ÃƒÆ’Ã‚Â©volution temporelle. Lorsqu'il est diagonal les ÃƒÆ’Ã‚Â©quations
+d'ÃƒÆ’Ã‚Â©volution des amplitudes sont dÃƒÆ’Ã‚Â©couplÃƒÆ’Ã‚Â©es. Dans le cas particulier d'un
+systÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  deux ÃƒÆ’Ã‚Â©tats de base l'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger s'ÃƒÆ’Ã‚Â©crit :
+
+On a donc deux ÃƒÆ’Ã‚Â©quations diffÃƒÆ’Ã‚Â©rentielles indÃƒÆ’Ã‚Â©pendantes :
+
+$${E_{1}c}_{1}(t) = i\hslash\frac{d}{dt}c_{1}(t)$$
+
+$${E_{2}c}_{2}(t) = i\hslash\frac{d}{dt}c_{2}(t)$$
+
+Elles s'intÃƒÆ’Ã‚Â¨grent facilement et les solutions sont donnÃƒÆ’Ã‚Â©es par :
+
+$$c_{1}(t) = c_{1}(0)e^{- iE_{1}t/\hslash}$$
+
+$$c_{2}(t) = c_{2}(0)e^{- iE_{2}t/\hslash}$$
+
+Les probabilitÃƒÆ’Ã‚Â©s pour trouver le systÃƒÆ’Ã‚Â¨me dans les deux ÃƒÆ’Ã‚Â©tats sont
+donnÃƒÆ’Ã‚Â©es respectivement par :
+
+$$P_{1} = {c_{1}(t)}^{*}c_{1}(t) = {c_{1}(0)}^{*}c_{1}(0)$$
+
+$$P_{2} = {c_{2}(t)}^{*}c_{2}(t) = {c_{2}(0)}^{*}c_{2}(0)$$
+
+Elles sont indÃƒÆ’Ã‚Â©pendantes du temps ce qui justifie l'appellation **d'{index}`ÃƒÆ’Ã‚Â©tats stationnaires`** pour ces ÃƒÆ’Ã‚Â©tats
+qui diagonalisent l'opÃƒÆ’Ã‚Â©rateur Hamiltonien. En effet, si ÃƒÆ’Ã‚Â  $t = 0$ le
+systÃƒÆ’Ã‚Â¨me se trouve dans l'ÃƒÆ’Ã‚Â©tat
+$ | \Phi_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ il y reste
+indÃƒÆ’Ã‚Â©finiment.
+
+Lorsqu'un systÃƒÆ’Ã‚Â¨me est dans un ÃƒÆ’Ã‚Â©tat stationnaire, c'est-ÃƒÆ’Ã‚Â -dire un ÃƒÆ’Ã‚Â©tat
+propre de son opÃƒÆ’Ã‚Â©rateur Hamiltonien, une mesure de son ÃƒÆ’Ã‚Â©nergie donne
+certainement la valeur propre correspondant ÃƒÆ’Ã‚Â  ce ket propre. L'ÃƒÆ’Ã‚Â©nergie
+du systÃƒÆ’Ã‚Â¨me est donc bien dÃƒÆ’Ã‚Â©finie. C'est un cas limite de la relation
+d'indÃƒÆ’Ã‚Â©termination temps-ÃƒÆ’Ã‚Â©nergie : $\Delta E$ tend vers zÃƒÆ’Ã‚Â©ro et la durÃƒÆ’Ã‚Â©e
+tend vers l'infini.
+
+Ainsi dans la base des ÃƒÆ’Ã‚Â©tats propres de $\widehat{H}$ les ÃƒÆ’Ã‚Â©quations
+d'ÃƒÆ’Ã‚Â©volution des amplitudes sont dÃƒÆ’Ã‚Â©couplÃƒÆ’Ã‚Â©es et celles-ci ne varient que
+par un facteur de phase dans le temps. Le problÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  rÃƒÆ’Ã‚Â©soudre dans le
+cas gÃƒÆ’Ã‚Â©nÃƒÆ’Ã‚Â©ral est donc la recherche des ÃƒÆ’Ã‚Â©tats propres de $\widehat{H}$.
+
+## Recherche systÃƒÆ’Ã‚Â©matique des ÃƒÆ’Ã‚Â©tats stationnaires
+
+Supposons que les N vecteurs
+${  | u_{k}  >,k = 1\;\text{ÃƒÆ’Ã‚Â }\;N }$
+forment une base de l'espace des ÃƒÆ’Ã‚Â©tats d'un systÃƒÆ’Ã‚Â¨me. Les ÃƒÆ’Ã‚Â©tats
+stationnaires sont notÃƒÆ’Ã‚Â©s
+$ | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$.
+
+Tout ÃƒÆ’Ã‚Â©tat du systÃƒÆ’Ã‚Â¨me peut ÃƒÆ’Ã‚Âªtre dÃƒÆ’Ã‚Â©veloppÃƒÆ’Ã‚Â© sur la base choisie :
+
+$$ | \Psi(t)  > = \sum_{k}^{}{b_{k}(t)} | u_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Si le systÃƒÆ’Ã‚Â¨me est initialement dans un ÃƒÆ’Ã‚Â©tat stationnaire particulier,
+$ | \Phi_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ par exemple, on a :
+
+$ | \Psi(0)  > =  | \Phi_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+
+et
+
+${ | \Psi(t)  > = e}^{- iE_{1}t/\hslash} | \Phi_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+
+soit :
+
+$${ | \Psi(t)  > = e}^{- iE_{1}t/\hslash} | \Psi(0)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Ainsi, l'ÃƒÆ’Ã‚Â©volution temporelle d'un ÃƒÆ’Ã‚Â©tat stationnaire se traduit
+simplement par la multiplication du vecteur d'ÃƒÆ’Ã‚Â©tat par un facteur de
+phase.
+
+**<u>Lorsqu'un ÃƒÆ’Ã‚Â©tat stationnaire est dÃƒÆ’Ã‚Â©veloppÃƒÆ’Ã‚Â© sur une base donnÃƒÆ’Ã‚Â©e il faut
+donc que toutes les amplitudes d'ÃƒÆ’Ã‚Â©tat varient de la mÃƒÆ’Ã‚Âªme maniÃƒÆ’Ã‚Â¨re dans le
+temps</u>**. La recherche d'un ÃƒÆ’Ã‚Â©tat stationnaire
+$ | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$ d'ÃƒÆ’Ã‚Â©nergie $E_{k}$
+ÃƒÆ’Ã‚Â©quivaut donc ÃƒÆ’Ã‚Â  chercher une solution de l'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger sous
+la forme :
+
+$$c_{l}(t) = c_{l}(0)e^{- iE_{k}t/\hslash}l = 1,2\;\text{ÃƒÆ’Ã‚Â }\;N$$
+
+oÃƒÆ’Ã‚Â¹ $E_{k}$ est l'ÃƒÆ’Ã‚Â©nergie de l'ÃƒÆ’Ã‚Â©tat stationnaire recherchÃƒÆ’Ã‚Â©
+$ | \Phi_{k}ÃƒÂ¢Ã…Â¸Ã‚Â©$.
+
+On a alors :
+
+$$i\hslash\frac{d}{dt}c_{l}(t) = {E_{k}c}_{l}(t)$$
+
+et l'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger s'ÃƒÆ’Ã‚Â©crit :
+
+$$\sum_{m = 1}^{N}{\widehat{H}}_{lm}c_{m}(t) = E_{k}c_{l}(t)$$
+
+ou :
+
+$$\sum_{m = 1}^{N}{\widehat{H}}_{lm}c_{m}(0) = E_{k}c_{l}(0)$$
+
+Les ÃƒÆ’Ã‚Â©nergies possibles sont donc les valeurs propres de l'opÃƒÆ’Ã‚Â©rateur
+Hamiltonien et les vecteurs propres ont comme composantes les amplitudes
+donnant le dÃƒÆ’Ã‚Â©veloppement de l'ÃƒÆ’Ã‚Â©tat stationnaire sur la base des
+$ | u_{l}ÃƒÂ¢Ã…Â¸Ã‚Â©$. L'ÃƒÆ’Ã‚Â©quation prÃƒÆ’Ã‚Â©cÃƒÆ’Ã‚Â©dente
+est appelÃƒÆ’Ã‚Â©e ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger indÃƒÆ’Ã‚Â©pendante du temps ou {index}`ÃƒÆ’Ã‚Â©quation aux valeurs propres`.
+
+Dans le cas particulier d'un systÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  deux ÃƒÆ’Ã‚Â©tats de base. L'ÃƒÆ’Ã‚Â©quation de
+SchrÃƒÆ’Ã‚Â¶dinger indÃƒÆ’Ã‚Â©pendante du temps s'ÃƒÆ’Ã‚Â©crit :
+
+$$\begin{pmatrix}
+H_{11} & H_{12} \\
+H_{21} & H_{22}
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = E\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix}$$
+
+soit :
+
+$$\begin{pmatrix}
+H_{11} - E & H_{12} \\
+H_{21} & H_{22} - E
+\end{pmatrix}\begin{pmatrix}
+c_{1} \\
+c_{2}
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0
+\end{pmatrix}$$
+
+Ce systÃƒÆ’Ã‚Â¨me d'ÃƒÆ’Ã‚Â©quations admet des solutions non triviales ÃƒÆ’Ã‚Â  la condition
+que le dÃƒÆ’Ã‚Â©terminant de la matrice des coefficients s'annule. Il faut donc
+avoir :
+
+$$| \begin{matrix}
+H_{11} - E & H_{12} \\
+H_{21} & H_{22} - E
+\end{matrix} | = 0$$
+
+Les valeurs possibles de $E$ sont solutions de l'ÃƒÆ’Ã‚Â©quation quadratique :
+
+$$E^{2} - ( H_{11} + H_{22} )E + H_{11}H_{22} - H_{12}H_{21} = 0$$
+
+Le discriminant est donnÃƒÆ’Ã‚Â© par :
+
+$\Delta = ( H_{11} + H_{22} )^{2} - 4\; H_{11}H_{22} + 4\; H_{12}H_{21}$
+avec $( \; H_{12} )^{*} = H_{21}$
+
+soit :
+
+$\Delta = ( H_{11} - H_{22} )^{2} + 4\;| H_{12} |^{2}$
+soit $\Delta > 0$
+
+On a donc :
+
+$$E = \frac{H_{11} + H_{22}}{2} \pm \frac{1}{2}\sqrt{( H_{11} - H_{22} )^{2} + 4\; H_{12}H_{21}}$$
+
+Remarquons enfin que la somme des ÃƒÆ’Ã‚Â©nergies des ÃƒÆ’Ã‚Â©tats stationnaires est
+ÃƒÆ’Ã‚Â©gale ÃƒÆ’Ã‚Â  la trace de H et que leur produit est ÃƒÆ’Ã‚Â©gal ÃƒÆ’Ã‚Â  son dÃƒÆ’Ã‚Â©terminant.
+
+```{important}
+ Connaissant l'ÃƒÆ’Ã‚Â©tat $ | \Psi(0)ÃƒÂ¢Ã…Â¸Ã‚Â©$
+ dÃƒÆ’Ã‚Â©crivant l\'ÃƒÆ’Ã‚Â©tat du systÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  l'instant $t = 0$. Pour connaÃƒÆ’Ã‚Â®tre
+ l'ÃƒÆ’Ã‚Â©tat $ | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$ ÃƒÆ’Ã‚Â  l'instant
+ $t$, on procÃƒÆ’Ã‚Â¨de systÃƒÆ’Ã‚Â©matiquement de la maniÃƒÆ’Ã‚Â¨re suivante :
+
+ 1Ãƒâ€šÃ‚Â°) On dÃƒÆ’Ã‚Â©veloppe $| \Psi(0)ÃƒÂ¢Ã…Â¸Ã‚Â©$sur la base des ÃƒÆ’Ã‚Â©tats
+ propre de $\widehat{H}$ :
+
+ $ | \Psi(0)  > = \sum_{l}^{}{c_{l}(0)} | \Phi_{l}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+ avec
+ $c_{l}(0) = < \Phi_{l} || \Psi(t0)ÃƒÂ¢Ã…Â¸Ã‚Â©$ et
+ $\widehat{H} | \Phi_{l}  >  = E_{l}| \Phi_{l}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+
+ 2Ãƒâ€šÃ‚Â°) On calcule alors
+ $ | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$pour tout $t$ en
+ multipliant chaque coefficient $c_{l}(0)$ par $e^{- iE_{l}t/\hslash}$
+ :
+ $ | \Psi(t)  > = \sum_{l}^{}{c_{l}(0)}e^{- iE_{l}t/\hslash} | \Phi_{l}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+```
+
+##  Constantes du mouvement
+
+La valeur moyenne d'une grandeur physique est donnÃƒÆ’Ã‚Â©e par :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\widehat{A} >_{\Psi} = <  \Psi(t) | \widehat{A} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+Sa dÃƒÆ’Ã‚Â©rivÃƒÆ’Ã‚Â©e par rapport au temps s'ÃƒÆ’Ã‚Â©crit :
+
+$$\frac{d}{dt}< \widehat{A} >_{\Psi} = ( \frac{d}{dt}< \Psi(t) | )\widehat{A}| \Psi(t) > + < \Psi(t) |\frac{\partial\widehat{A}}{\partial t}| \Psi(t) > + < \Psi(t) |\widehat{A}( \frac{d}{dt}| \Psi(t) > )$$
+
+La variation temporelle de cette grandeur peut ÃƒÆ’Ã‚Âªtre due ÃƒÆ’Ã‚Â  une dÃƒÆ’Ã‚Â©pendance
+explicite sur le temps ainsi qu'ÃƒÆ’Ã‚Â  une ÃƒÆ’Ã‚Â©volution de l'ÃƒÆ’Ã‚Â©tat du systÃƒÆ’Ã‚Â¨me. A
+l'aide de l'ÃƒÆ’Ã‚Â©quation de SchrÃƒÆ’Ã‚Â¶dinger :
+
+$$ \widehat{H}| \Psi(t)  > = i\hslash\frac{d}{dt} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+et de l'ÃƒÆ’Ã‚Â©quation correspondante dans l'espace dual :
+
+$$ÃƒÂ¢Ã…Â¸Ã‚Â¨\Psi(t) |\widehat{H}  = - i\hslash\frac{d}{dt}<  \Psi(t) | $$
+
+On obtient :
+
+$$i\hslash< \widehat{A} >_{\Psi} = - <  \Psi(t) | \widehat{H}\widehat{A} | \Psi(t)  > + <  \Psi(t) | \widehat{A} \widehat{H}| \Psi(t)  > + i\hslash<  \Psi(t) | \frac{\partial\widehat{A}}{\partial t} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+soit :
+
+$$i\hslash< \widehat{A} >_{\Psi} = <  \Psi(t) | [ \widehat{A,}\widehat{H} ] | \Psi(t)  > + i\hslash<  \Psi(t) | \frac{\partial\widehat{A}}{\partial t} | \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+c'est-ÃƒÆ’Ã‚Â -dire :
+
+$$i\hslash< \widehat{A} >_{\Psi} = < [ \widehat{A,}\widehat{H} ] >_{\Psi} + i\hslash< \frac{\partial\widehat{A}}{\partial t} >_{\Psi}$$
+
+Si une observable ne dÃƒÆ’Ã‚Â©pend pas explicitement du temps et si elle
+commute avec le Hamiltonien alors sa valeur moyenne ne dÃƒÆ’Ã‚Â©pend pas du
+temps : on dit qu'elle reprÃƒÆ’Ã‚Â©sente une grandeur physique qui est une
+**{index}`constante du mouvement`**.
+
+## Exemple : systÃƒÆ’Ã‚Â¨me ÃƒÆ’Ã‚Â  deux ÃƒÆ’Ã‚Â©tats
+
+### L\'ion molÃƒÆ’Ã‚Â©culaire $H_{2}^{+}$
+
+L'ion molÃƒÆ’Ã‚Â©culaire $H_{2}^{+}$ est constituÃƒÆ’Ã‚Â© de deux protons et un
+ÃƒÆ’Ã‚Â©lectron. Si l'ÃƒÆ’Ã‚Â©lectron est au voisinage d'un des protons, le systÃƒÆ’Ã‚Â¨me
+peut ÃƒÆ’Ã‚Âªtre considÃƒÆ’Ã‚Â©rÃƒÆ’Ã‚Â© comme ÃƒÆ’Ã‚Â©tant la superposition d'un atome d'hydrogÃƒÆ’Ã‚Â¨ne
+interagissant avec un proton. Si la distance internuclÃƒÆ’Ã‚Â©aire tend vers
+l'infini le proton et l'atome d'hydrogÃƒÆ’Ã‚Â¨ne sont supposÃƒÆ’Ã‚Â©s isolÃƒÆ’Ã‚Â©s. Le
+systÃƒÆ’Ã‚Â¨me $H_{2}^{+}$ possÃƒÆ’Ã‚Â¨de un grand nombre d'ÃƒÆ’Ã‚Â©tats de translation, de
+rotation et de vibration. C'est la raison pour laquelle nous supposons
+que la molÃƒÆ’Ã‚Â©cule est au repos c'est-ÃƒÆ’Ã‚Â -dire que les ÃƒÆ’Ã‚Â©nergies de
+translation, rotation et de vibrations sont aussi basses que possibles
+(cas limite : elles sont nulles). Dans ce cas, il reste encore deux
+ÃƒÆ’Ã‚Â©tats possibles selon que l'ÃƒÆ’Ã‚Â©lectron se trouve au voisinage du premier
+ou du second proton. Nous notons $| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ et
+$| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$ ces deux ÃƒÆ’Ã‚Â©tats et nous supposons
+
+```{figure} media/image28.png
+:name: fig-ionH2plus
+:alt: Ion molÃƒÆ’Ã‚Â©culaire $H_2^+$
+:width: 100%
+Ion molÃƒÆ’Ã‚Â©culaire $H_2^+$
+```
+
+Examinons la forme de l'ÃƒÆ’Ã‚Â©nergie potentielle ÃƒÆ’Ã‚Â©lectrostatique au voisinage
+de la mi-distance entre les deux protons.
+
+A mi-distance, la somme vectorielle de forces ÃƒÆ’Ã‚Â©lectrostatiques exercÃƒÆ’Ã‚Â©es
+par les deux $H^{+}$ sur l'ÃƒÆ’Ã‚Â©lectron est nulle car les 2 forces se
+compensent exactement donc $\frac{\partial V}{\partial x} = 0$.
+L'ÃƒÆ’Ã‚Â©nergie potentielle $V$ prÃƒÆ’Ã‚Â©sente un extremum. Afin de dÃƒÆ’Ã‚Â©terminer s'il
+s'agit d'un maximum ou d'un minimum, on ÃƒÆ’Ã‚Â©carte l'ÃƒÆ’Ã‚Â©lectron de cette
+position. L'ÃƒÆ’Ã‚Â©lectron est alors attirÃƒÆ’Ã‚Â© par le proton le plus proche. La
+mi-distance est donc un maximum local car il ne correspond pas ÃƒÆ’Ã‚Â  une
+position d'ÃƒÆ’Ã‚Â©quilibre.
+
+Si $| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ et $| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$ ÃƒÆ’Ã‚Â©taient
+stationnaires, c'est ÃƒÆ’Ã‚Â  dire si l'amplitude de probabilitÃƒÆ’Ã‚Â© que l'ÃƒÆ’Ã‚Â©lectron
+passe d'un proton ÃƒÆ’Ã‚Â  un autre, il correspondrait ÃƒÆ’Ã‚Â  la mÃƒÆ’Ã‚Âªme ÃƒÆ’Ã‚Â©nergie compte
+tenu de la symÃƒÆ’Ã‚Â©trie du systÃƒÆ’Ã‚Â¨me. On a donc :
+
+$$H_{11} = < u_{1} |H| u_{1} > = H_{22} = < u_{2} |H| u_{2} > = E_{0}$$
+
+oÃƒÆ’Ã‚Â¹ $E_{0}$ correspond ÃƒÆ’Ã‚Â  l'ÃƒÆ’Ã‚Â©nergie d'un atome d'hydrogÃƒÆ’Ã‚Â¨ne ÃƒÆ’Ã‚Â  laquelle
+s'ajoute celle d'un proton.
+
+Il existe une amplitude de probabilitÃƒÆ’Ã‚Â© de transition que l'ÃƒÆ’Ã‚Â©lectron
+franchisse la barriÃƒÆ’Ã‚Â¨re d'ÃƒÆ’Ã‚Â©nergie potentielle par effet tunnel. Par
+consÃƒÆ’Ã‚Â©quent $| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ et $| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+ne sont pas stationnaires et le Hamiltonien n'est pas diagonal dans
+cette base.
+
+Nous posons $H_{12} = H_{21} = - a$. Ainsi :
+
+$$H_{{ | u_{1} >,| u_{2} > }} = \begin{pmatrix}
+E_{0} & - a \\
+ - a & E_{0}
+\end{pmatrix}$$
+ 
+ avec $a > 0$
+
+Recherchons les valeurs propres du Hamiltonien $H$ et les ÃƒÆ’Ã‚Â©tats propres
+(ÃƒÆ’Ã‚Â©tats stationnaires) :
+
+$$\det|H - \lambda I| = | \begin{matrix}
+E_{0} - \lambda & - a \\
+ - a & E_{0} - \lambda
+\end{matrix} | = 0$$
+
+$$( E_{0} - \lambda )^{2} - a^{2} = 0$$
+
+$$( E_{0} - \lambda + a )( E_{0} - \lambda - a ) = 0$$
+
+Donc  $\lambda = E_{0} \pm a$sont les ÃƒÆ’Ã‚Â©nergies des nouveaux ÃƒÆ’Ã‚Â©tats
+stationnaires.
+
+Recherchons le dÃƒÆ’Ã‚Â©veloppement de l'ÃƒÆ’Ã‚Â©tat propre
+$| \varphi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$ (resp.
+$| \varphi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$) associÃƒÆ’Ã‚Â© ÃƒÆ’Ã‚Â  la valeur propre
+$E_{0} - a$ (resp. $E_{0} + a$) dans la base des ÃƒÆ’Ã‚Â©tats
+$| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ et $| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$.
+
+En notation matricielle dans la base
+${ | u_{1} >,| u_{2} > }$,
+on cherche donc les composantes $x$ et $y$ telles que :
+
+$$\begin{pmatrix}
+E_{0} & - a \\
+ - a & E_{0}
+\end{pmatrix}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = ( E_{0} - a )\begin{pmatrix}
+x \\
+y
+\end{pmatrix}$$
+
+avec $| \varphi_{a} > = x| u_{1} > + y| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+
+On obtient $x = y$. En normalisant l'ÃƒÆ’Ã‚Â©tat
+$| \varphi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$, on trouve :
+
+```{math}
+:label: eq-47
+
+| \varphi_{a} > = \frac{1}{\sqrt{2}}( | u_{1} > + | u_{2} > )
+```
+
+De mÃƒÆ’Ã‚Âªme, on obtient :
+
+```{math}
+:label: eq-48
+
+| \varphi_{b} > = \frac{1}{\sqrt{2}}( | u_{1} > - | u_{2} > )
+```
+
+L'ÃƒÆ’Ã‚Â©tat $| \varphi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$ possÃƒÆ’Ã‚Â¨de une ÃƒÆ’Ã‚Â©nergie infÃƒÆ’Ã‚Â©rieure
+ÃƒÆ’Ã‚Â  celle d'un proton sÃƒÆ’Ã‚Â©parÃƒÆ’Ã‚Â© ÃƒÆ’Ã‚Â  l'infini d'un atome d'hydrogÃƒÆ’Ã‚Â¨ne ($E_{0}$)
+et l'ÃƒÆ’Ã‚Â©nergie de liaison est numÃƒÆ’Ã‚Â©riquement ÃƒÆ’Ã‚Â©gale ÃƒÆ’Ã‚Â  l'ÃƒÆ’Ã‚Â©lÃƒÆ’Ã‚Â©ment non diagonal
+du Hamiltonien $H$.
+
+L'amplitude de localisation pour l'ÃƒÆ’Ã‚Â©tat
+$ | \Phi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$ est
+$\Phi_{a}( \overrightarrow{r} )$ avec :
+
+$$\Phi_{a}( \overrightarrow{r} ) = \frac{1}{\sqrt{2}}( < \overrightarrow{r} || u_{1} > + < \overrightarrow{r} || u_{2} > )$$
+
+Or par hypothÃƒÆ’Ã‚Â¨se
+$ÃƒÂ¢Ã…Â¸Ã‚Â¨\overrightarrow{r} || u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ (resp.
+$ÃƒÂ¢Ã…Â¸Ã‚Â¨\overrightarrow{r} || u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$) est une
+fonction qui prÃƒÆ’Ã‚Â©sente des valeurs importantes pour des valeurs de
+$\overrightarrow{r}$ correspondant ÃƒÆ’Ã‚Â  une localisation de l'ÃƒÆ’Ã‚Â©lectron au
+voisinage du premier (resp. second) proton.
+
+Si l'ÃƒÆ’Ã‚Â©tat de l'ÃƒÆ’Ã‚Â©lectron est dÃƒÆ’Ã‚Â©crit par
+$ | \varphi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$, l'ÃƒÆ’Ã‚Â©lectron
+possÃƒÆ’Ã‚Â¨de la mÃƒÆ’Ã‚Âªme AP de se trouver au voisinage du premier ou du second
+proton. Puisque l'ÃƒÆ’Ã‚Â©lectron possÃƒÆ’Ã‚Â¨de une AP non nulle de passer d'un
+proton ÃƒÆ’Ã‚Â  l'autre, l'ÃƒÆ’Ã‚Â©lectron possÃƒÆ’Ã‚Â¨de un AP non nulle entre les protons :
+son AP de localisation est donc symÃƒÆ’Ã‚Â©trique par rapport au plan $x = 0$.
+Comme elle est associÃƒÆ’Ã‚Â©e ÃƒÆ’Ã‚Â  l'ÃƒÆ’Ã‚Â©tat liÃƒÆ’Ã‚Â©, on dit que l'AP de localisation
+est liante. On parle d'orbitale liante.
+
+Si l'ÃƒÆ’Ã‚Â©lectron est dans l'ÃƒÆ’Ã‚Â©tat
+$ | \Phi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$ l'ÃƒÆ’Ã‚Â©lectron possÃƒÆ’Ã‚Â¨de la
+mÃƒÆ’Ã‚Âªme AP de se trouver au voisinage du premier ou du second proton au
+signe prÃƒÆ’Ã‚Â¨s. L'amplitude de localisation est donc une fonction
+antisymÃƒÆ’Ã‚Â©trique par rapport au plan $x = 0$. On dit que
+$\Phi_{b}( \overrightarrow{r} )$ est une orbitale antiliante
+car son ÃƒÆ’Ã‚Â©nergie est supÃƒÆ’Ã‚Â©rieure ÃƒÆ’Ã‚Â  celle d'un proton et d'un atome
+d'hydrogÃƒÆ’Ã‚Â¨ne isolÃƒÆ’Ã‚Â©.
+
+Cependant que l'ÃƒÆ’Ã‚Â©lectron soit dans l'ÃƒÆ’Ã‚Â©tat
+$ | \Phi_{a}ÃƒÂ¢Ã…Â¸Ã‚Â©$ ou
+$ | \Phi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$, il possÃƒÆ’Ã‚Â¨de la mÃƒÆ’Ã‚Âªme
+probabilitÃƒÆ’Ã‚Â© de se trouver au voisinage de l'un ou l'autre des protons.
+
+On souhaite dÃƒÆ’Ã‚Â©terminer la variation temporelle
+$| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ des AP $c_{1}(t)$ et $c_{2}(t)$ de trouver
+le systÃƒÆ’Ã‚Â¨me dans l'ÃƒÆ’Ã‚Â©tat $| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ respectivement
+$| u_{2}ÃƒÂ¢Ã…Â¸Ã‚Â©$ sachant qu'ÃƒÆ’Ã‚Â  $t = 0$ le systÃƒÆ’Ã‚Â¨me est dans
+l'ÃƒÆ’Ã‚Â©tat $| \Psi(t = 0) > = | u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$.
+
+On dÃƒÆ’Ã‚Â©veloppe l'ÃƒÆ’Ã‚Â©tat $| \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$ sur la base des ÃƒÆ’Ã‚Â©tats
+stationnaires
+${ | \varphi_{a} >,| \varphi_{b} > }$
+car on sait comment ÃƒÆ’Ã‚Â©voluent les amplitudes des ÃƒÆ’Ã‚Â©tats stationnaires.
+
+On fait donc agir la relation de fermeture
+$| \varphi_{a} ><  \varphi_{a} | + | \varphi_{b} ><  \varphi_{b} | = \widehat{1} $
+sur l'ÃƒÆ’Ã‚Â©tat $| \Psi(t)ÃƒÂ¢Ã…Â¸Ã‚Â©$.
+
+$$| \Psi(t) > = | \varphi_{a} >< \varphi_{a} || \Psi(t) > + | \varphi_{b} >< \varphi_{b} || \Psi(t) > = c_{a}(t)| \varphi_{a} > + c_{b}(t)| \varphi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+On connaÃƒÆ’Ã‚Â®t la forme des amplitudes d'ÃƒÆ’Ã‚Â©tats $c_{a}(t)$ et $c_{b}(t)$ :
+
+$$| \Psi(t) > = c_{a}(0)e^{- iE_{a}t/\hslash}| \varphi_{a} > + c_{b}(0)e^{- iE_{b}t/\hslash}| \varphi_{b} > = c_{a}(0)e^{- i( E_{0} - a )t/\hslash}| \varphi_{a} > + c_{b}(0)e^{- i( E_{0} + a )t/\hslash}| \varphi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+
+```{math}
+:label: eq-49
+
+| \Psi(t) > = e^{- iE_{0}t/\hslash}[ c_{a}(0)e^{iat/\hslash}| \varphi_{a} > + c_{b}(0)e^{- iat/\hslash}| \varphi_{b} > ]
+```
+
+Or ÃƒÆ’Ã‚Â  t=0 :
+
+```{math}
+:label: eq-50
+
+| \Psi(t = 0) > = | u_{1} >
+```
+
+En identifiant {eq}`eq-49` et {eq}`eq-50` on
+obtient :
+
+$$| u_{1} > = c_{a}(0)| \varphi_{a} > + c_{b}(0)| \varphi_{b}ÃƒÂ¢Ã…Â¸Ã‚Â©$$
+
+DÃƒÆ’Ã‚Â©veloppons l'ÃƒÆ’Ã‚Â©tat $| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$ sur les ÃƒÆ’Ã‚Â©tats
+stationnaires afin de dÃƒÆ’Ã‚Â©terminer par identification les amplitudes
+d'ÃƒÆ’Ã‚Â©tat $c_{a}(0)$ et $c_{b}(0)$. D'aprÃƒÆ’Ã‚Â¨s {eq}`eq-47` et
+{eq}`eq-48`, on a :
+
+$| \varphi_{a} > + | \varphi_{b} > = \sqrt{2}| u_{1}ÃƒÂ¢Ã…Â¸Ã‚Â©$
+soit
+$| u_{1} > = \frac{1}{\sqrt{2}}( | \varphi_{a} > + | \varphi_{b} > )$
+
+Cela entraÃƒÆ’Ã‚Â®ne :
+
+$$c_{a}(0) = c_{b}(0) = \frac{1}{\sqrt{2}}$$
+
+soit  :
+
+$$| \Psi(t) > = \frac{e^{- iE_{0}t/\hslash}}{\sqrt{2}}[ e^{iat/\hslash}| \varphi_{a} > + e^{- iat/\hslash}| \varphi_{b} > ]$$
+
+
+
+
+
+
+
